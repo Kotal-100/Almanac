@@ -19,7 +19,7 @@ from django.urls import include, path
 from Contactus import views
 from Dashboard import views as Dashboardviews
 
-new_urlpatterns = [
+dashboard_urlpatterns = [
     path('user/', Dashboardviews.user, name='user'),
     path('institution/', Dashboardviews.institution, name='institution'),
     path('roles/', Dashboardviews.roles, name='roles'),
@@ -31,7 +31,7 @@ new_urlpatterns = [
 urlpatterns = [
     path("community-engagement/", include("Communityengagement.urls")),
      path('contact-us/', views.Contactus, name='Contactus'),
-    path("dashboard/", include(new_urlpatterns)),
+    path("dashboard/", include(dashboard_urlpatterns)),
     path("", include("Home.urls")),
     path("legislations/", include("Legislations.urls")),
     path("policies/", include("Policies.urls")),
