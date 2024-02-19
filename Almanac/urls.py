@@ -35,6 +35,6 @@ urlpatterns = [
     path("", include("Home.urls")),
     path("legislations/", include("Legislations.urls")),
     path("policies/", include("Policies.urls")),
-   
+  
     path('admin/', admin.site.urls),
 ]

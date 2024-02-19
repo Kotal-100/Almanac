@@ -4,5 +4,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
+# def Contactus(request):
+#     return HttpResponse("Contactus")
+
 def Contactus(request):
-    return HttpResponse("Contactus")
+    return render(request, "contactus/contactus.html")
