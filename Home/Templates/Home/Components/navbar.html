@@ -1,0 +1,52 @@
+
+{% load static %}
+
+
+
+
+
+<header>
+
+    <span class=" bi bi-calendar-date-fill" style="color:grey; font-size:15px;"> Monday - Friday</span>
+
+
+    <span class="bi bi-clock" style="font-size: 15px;color:grey;"> 8:00 - 17:00 GMT</span>
+
+
+    <span class="bi bi-envelope" style="font-size:15px;color:grey;"> cersgis@ug.edu.gh</span>
+
+
+    <span class="bi bi-telephone-fill " style="font-size:15px;color:grey;"> (+233)0303974211</span>
+
+
+    <div>
+      <a class="header-twitter" href="#" target="blank"><img src="{% static 'assets/image/facebook.ico' %}" alt="facebook"
+          width="20px"></a>
+      <a class="header-fb" href="#" target="blank"><img src="{% static 'assets/image/twitter.png' %}" alt="twitter" width="20px"></a>
+      <a class="header-linkin" href="# " target="blank"><img src="{% static 'assets/image/linkin.webp' %}" alt="linkin"
+          width="20px"></a>
+    </div>
+  </header>
+
+
+  <!--   
+ nav element features -->
+
+  <nav>
+
+    <div class="nav-button">
+      <div>
+        <a href="{% url 'Home:Home' %}" ><button type="button" value="HOME">HOME</button></a>
+      </div>
+
+
+      <a href=aboutus.html target="blank"><button type="button" value="ABOUT US">ABOUT US</button></a>
+
+
+
+      <a href="{% url 'Home:contact_us' %}" target="blank"><button type="button" value="CONTACT US">CONTACT US</button></a>
+    </div>
+    <div class="img-cersgis">
+      <a href="index.html" target="blank"><img src="{% static 'assets/image/logo.png' %}" alt="logo" width="120px"></a>
+    </div>
+  </nav>
