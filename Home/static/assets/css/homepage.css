@@ -1,15 +1,10 @@
-*{
+ *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-}
+} 
 
 
-.container{
-    width: px;
-    margin: ;
-    
-}
 ul{
     list-style-type: none;
 }
@@ -39,28 +34,26 @@ margin-bottom: 30px;
 }
 
 .header-twitter :hover{
-background-color: #0088cc;
-
-
+    background-color: #0088cc;
+    
+    
 }
 .header-fb :hover{
     background-color:#0077b3 ;
     
     
-    }
+}
 
-    .header-linkin :hover{
-        background-color: #0088cc ;
-        
-        
-        }
-
+.header-linkin :hover{
+    background-color: #0088cc ;
+    
+    
+}
 
 
 
 /* nav css features */
           
-
 
 
 .nav-button button:hover{
@@ -79,12 +72,12 @@ background-color: #0088cc;
 
 
 a:any-link{
-
-    color: whitesmoke;
-
-    }
-
     
+    color: whitesmoke;
+    
+}
+
+
 
 
 .nav-button button{
@@ -97,14 +90,14 @@ a:any-link{
 }
 
 .nav-button {
-display: flex;
-gap:30px;
-justify-content: center;
-align-items: center;
- margin-left: 800px;
- margin-top:-10px;
-
-}
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+ 
+    margin-top:-10px;
+    
+} 
 
 
 nav {
@@ -114,7 +107,7 @@ nav {
 position: relative;
 
 
-}
+} 
 
 .img-cersgis{
 position: absolute;
@@ -457,3 +450,8 @@ float: left;
 margin-left: 500px;
 
 }
+
+
+
+
+

@@ -8,4 +8,4 @@ from django.http import HttpResponse
 #     return HttpResponse("Contactus")
 
 def Contactus(request):
-    return render(request, "contactus/contactus.html")
+    return render(request, "Contactus/contactus.html")

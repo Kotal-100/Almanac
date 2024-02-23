@@ -1,118 +1,119 @@
-{% load static %}
+{% extends "Home/Components/base1.html"%}
+{%load static%}
+
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+ {% comment %} <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/contactus.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/contact.css' %}"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="http<s://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <title>Contact us</title>
-</head>
+</head>   {% endcomment %}
 
-<body>
-  
+
+{%block body%}
     <!-- ... -->
   
-<div class="sticky-top bg-white">
-
-  <header>
-
-    <span class=" b-day  text bi bi-calendar-date-fill" style="color:grey; "> Monday - Friday</span>
 
 
-    <span class="b-day bi bi-clock" style="color:grey;"> 8:00 - 17:00 GMT</span>
+    <div class="sticky-top bg-white">
 
-
-    <span class="d-day bi bi-envelope" style="color:grey;"> cersgis@ug.edu.gh</span>
-
-
-    <span class="d-day bi bi-telephone-fill " style="color:grey;"> (+233)0303974211</span>
-
-
-    <div class="social-images">
-      <a href="#" class="fa fa-facebook"></a>
-
-        <a href="#" class="fa fa-twitter"></a>
-
-        <a href="#" class="fa fa-linkedin"></a>
-    </div>
+      <header>
     
-  </header>
- 
-  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
-        <div class="nav-button">
-        <a href=index.html target="blank"><button type="button" value="HOME">HOME</button></a>
-        <a href=aboutus.html target="blank"><button type="button" value="ABOUT US">ABOUT US</button></a>
-        <a href=contactus.html target="blank"><button type="button" value="CONTACT US">CONTACT US</button></a>
+        <span class=" b-day  text bi bi-calendar-date-fill" style="color:grey; "> Monday - Friday</span>
+    
+    
+        <span class="b-day bi bi-clock" style="color:grey;"> 8:00 - 17:00 GMT</span>
+    
+    
+        <span class="d-day bi bi-envelope" style="color:grey;"> cersgis@ug.edu.gh</span>
+    
+    
+        <span class="d-day bi bi-telephone-fill " style="color:grey;"> (+233)0303974211</span>
+    
+    
+        <div class="social-images">
+          <a href= class="fa fa-facebook"></a>
+    
+            <a href="#" class="fa fa-twitter"></a>
+    
+            <a href="#" class="fa fa-linkedin"></a>
         </div>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav> -->
- 
-  
-  
-
-      <nav class="navbar navbar-expand-lg "> 
-        <div class="img-cersgis">
-          <a href="index.html" target="blank"><img class="cersgis" src="{% static 'assets/image/logo.png' %}" alt="logo" width="120px"></a>
-        </div>
-         
-
+        
+      </header>
+     
+      <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-           
+          <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+            <div class="nav-button">
+            <a href=index.html target="blank"><button type="button" value="HOME">HOME</button></a>
+            <a href=aboutus.html target="blank"><button type="button" value="ABOUT US">ABOUT US</button></a>
+            <a href=contactus.html target="blank"><button type="button" value="CONTACT US">CONTACT US</button></a>
+            </div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-             
-                 <li class="nav-item">
-                  <a class="nav-button nav-link active" aria-current="page" href=index.html target="blank"><button type="button" value="HOME">HOME</button></a> 
-                </li>
-            
-                <li class="nav-item">
-                  <a class="nav-button nav-link active" aria-current="page" href=aboutus.html target="blank"><button type="button" value="ABOUT US">ABOUT US</button></a>
-                </li>
-             
-                <li class="nav-item">
-                  <a class=" nav-button nav-link active" aria-current="page" href=contactus.html target="blank"><button type="button" value="CONTACT US">CONTACT US</button></a>
-                  </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
             </ul>
-                </div>
-    </div>
-   
-  </nav>
-
-  </div>
-
-
- 
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav> -->
+     
+      
+      
+    
+          <nav class="navbar navbar-expand-lg "> 
+            <div class="img-cersgis">
+              <a href="index.html" target="blank"><img class="cersgis" src="{% static 'assets/image/logo.png' %}" alt="logo" width="120px"></a>
+            </div>
+             
+    
+            <div class="container-fluid">
+    
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+               
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 
+                     <li class="nav-item">
+                      <a class="nav-button nav-link active" aria-current="page" href={% url 'Homes:Home'%} target="blank"><button type="button" value="HOME">HOME</button></a> 
+                    </li>
+                
+                     <li class="nav-item">
+                      <a class="nav-button nav-link active" aria-current="page" href="aboutus.html" target="blank"><button type="button" value="ABOUT US">ABOUT US</button></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class=" nav-button nav-link active" aria-current="page" href={% url 'Homes:contact_us'%} target="blank"><button type="button" value="CONTACT US">CONTACT US</button></a>
+                      </li>
+                </ul>
+                    </div>
+        </div>
+       
+      </nav>
+    
+      </div>
+    
 
 
 
@@ -309,7 +310,7 @@
               St, University of Ghana-Legon - Accra
             </span> </li>
 
-          <li class="contact-text"> <span class="bi bi-telephone-fill" style="font-size:px; color:grey;""> Phone: (+233)0303974211</span></li>
+          <li class="contact-text"> <span class="bi bi-telephone-fill" style="font-size:px; color:grey;"> Phone: (+233)0303974211</span></li>
 
           <li class=" contact-text"> <span class="bi bi-envelope  " style="font:15px; color:grey;"> Email:
                 <a class="contact-email" href="#">cersgis@ug.edu.gh</a> </span>
@@ -357,7 +358,7 @@
 
 
 
-  </footer> 
+ {% endblock%}
 
 
 
@@ -392,7 +393,3 @@
 
 
 
-
-
-</body>
-</html>

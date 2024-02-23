@@ -5,48 +5,95 @@
 
 
 
-<header>
+<div class="sticky-top bg-white">
 
-    <span class=" bi bi-calendar-date-fill" style="color:grey; font-size:15px;"> Monday - Friday</span>
+  <header>
 
-
-    <span class="bi bi-clock" style="font-size: 15px;color:grey;"> 8:00 - 17:00 GMT</span>
-
-
-    <span class="bi bi-envelope" style="font-size:15px;color:grey;"> cersgis@ug.edu.gh</span>
+    <span class=" b-day  text bi bi-calendar-date-fill" style="color:grey; "> Monday - Friday</span>
 
 
-    <span class="bi bi-telephone-fill " style="font-size:15px;color:grey;"> (+233)0303974211</span>
+    <span class="b-day bi bi-clock" style="color:grey;"> 8:00 - 17:00 GMT</span>
 
 
-    <div>
-      <a class="header-twitter" href="#" target="blank"><img src="{% static 'assets/image/facebook.ico' %}" alt="facebook"
-          width="20px"></a>
-      <a class="header-fb" href="#" target="blank"><img src="{% static 'assets/image/twitter.png' %}" alt="twitter" width="20px"></a>
-      <a class="header-linkin" href="# " target="blank"><img src="{% static 'assets/image/linkin.webp' %}" alt="linkin"
-          width="20px"></a>
+    <span class="d-day bi bi-envelope" style="color:grey;"> cersgis@ug.edu.gh</span>
+
+
+    <span class="d-day bi bi-telephone-fill " style="color:grey;"> (+233)0303974211</span>
+
+
+    <div class="social-images">
+      <a href="#" class="fa fa-facebook"></a>
+
+        <a href="#" class="fa fa-twitter"></a>
+
+        <a href="#" class="fa fa-linkedin"></a>
     </div>
+    
   </header>
-
-
-  <!--   
- nav element features -->
-
-  <nav>
-
-    <div class="nav-button">
-      <div>
-        <a href="{% url 'Home:Home' %}" ><button type="button" value="HOME">HOME</button></a>
+ 
+  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+        <div class="nav-button">
+        <a href=index.html target="blank"><button type="button" value="HOME">HOME</button></a>
+        <a href=aboutus.html target="blank"><button type="button" value="ABOUT US">ABOUT US</button></a>
+        <a href=contactus.html target="blank"><button type="button" value="CONTACT US">CONTACT US</button></a>
+        </div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
-
-
-      <a href=aboutus.html target="blank"><button type="button" value="ABOUT US">ABOUT US</button></a>
-
-
-
-      <a href="{% url 'Home:contact_us' %}" target="blank"><button type="button" value="CONTACT US">CONTACT US</button></a>
     </div>
-    <div class="img-cersgis">
-      <a href="index.html" target="blank"><img src="{% static 'assets/image/logo.png' %}" alt="logo" width="120px"></a>
+  </nav> -->
+ 
+  
+  
+
+      <nav class="navbar navbar-expand-lg "> 
+        <div class="img-cersgis">
+          <a href="index.html" target="blank"><img class="cersgis" src="{% static 'assets/image/logo.png' %}" alt="logo" width="120px"></a>
+        </div>
+         
+
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+           
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             
+                 <li class="nav-item">
+                  <a class="nav-button nav-link active" aria-current="page" href={% url 'Homes:Home'%} target="blank"><button type="button" value="HOME">HOME</button></a> 
+                </li>
+            
+                 <li class="nav-item">
+                  <a class="nav-button nav-link active" aria-current="page" href="aboutus.html" target="blank"><button type="button" value="ABOUT US">ABOUT US</button></a>
+                </li>
+                <li class="nav-item">
+                  <a class=" nav-button nav-link active" aria-current="page" href={% url 'Homes:contact_us'%} target="blank"><button type="button" value="CONTACT US">CONTACT US</button></a>
+                  </li>
+            </ul>
+                </div>
     </div>
+   
   </nav>
+
+  </div>
