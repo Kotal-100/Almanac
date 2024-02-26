@@ -29,6 +29,7 @@ dashboard_urlpatterns = [
 
 
 urlpatterns = [
+    path("about-us/", include("Aboutus.urls")),
     path("community-engagement/", include("Communityengagement.urls")),
      path('contact-us/', views.Contactus, name='contact_us'),
     path("dashboard/", include(dashboard_urlpatterns)),
