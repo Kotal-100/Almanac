@@ -32,9 +32,9 @@ header {
   gap: 30px;
   justify-content: center;
   align-items: center;
-  margin-left: 800px;
-  margin-top: -10px;
-}
+  /* margin-left: 50px;
+  margin-top: -10px; */
+} 
 
 .nav-button button:hover {
   color: white;
@@ -111,8 +111,9 @@ nav {
   border-top: 5px solid #0088cc;
   margin-bottom: 10px;
   position: absolute;
-  top: 235px;
-  left: 230px;
+  top: 500px;
+  left: 0;
+  transform: translate(50%,);
 }
 
 .words,
