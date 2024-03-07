@@ -10,5 +10,6 @@ class AboutUs(models.Model):
  why_us = models.TextField()
  meet_our_team = models.TextField()
  
- def __str__(self):
+def __str__(self):
         return self.title
+ 
