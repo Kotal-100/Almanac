@@ -14,6 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>ABOUT US</title>
 </head>
+
 {%block body%}
 <body>
   <div class="sticky-top bg-white">
@@ -67,6 +68,7 @@
             <li class="nav-item">
               <a class=" nav-button nav-link active" aria-current="page" href={% url 'Homes:contact_us'%} target="blank"><button type="button" value="CONTACT US">CONTACT US</button></a>
               </li>
+
               <li class="nav-item">
                 <a class=" nav-button nav-link active" aria-current="page" href={% url 'Homes:blog'%}><button type="button" value="BLOG">BLOG</button></a>
                 </li>
@@ -77,109 +79,132 @@
 </nav>
 
 </div>
-   
-
 
 <section class="section">
     <div class="section-head">
-<a href="index.html">HOME</a> &gt ABOUT US
+<a href="index.html">HOME</a> &gt Blog
 </div>
 
 <div  class="section-head1">
-About CERSGIS
+    Blog
 </div>
 
 </section>
+   
 
+<div>
+    <img src="{% static 'assets/image/can.jpeg' %}" alt="people" width="335px" height="200px"></img>
 
+    <div class="map-text mt-3">
+      <ul>
+        <li class="month">Jun</li>
+        <li class="year">2021</li>
+      </ul>
+      <a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"> Encroachment On The Sakumo<br>Ramsar Site</a>
+    </div>
+    <div>
+      <p>{{display.sakumono}}</p>
+      <p class="news-section-border">the only </p>
+    </div>
+    <button class="news-section-btn" type="button" value="Read more"><a href="#">Readmore....</a></button>
+  </div>
 
+  <div>
+    <img src="{% static 'assets/image/kan.jpeg' %}" alt="people" width="335px" height="200px"></img>
+    <div class="map-text mt-3">
+      <ul>
+        <li class="month">Jun</li>
+        <li class="year">2021</li>
+      </ul>
 
-<article >
-  <div class="article-border"></div>
-    <strong>    <h1 class="article-head">{{display.title}}</h1></strong>
- <p class="words">The Centre for Remote Sensing and Geographic Information Services (CERSGIS) was established in 1999 by the University of Ghana and the Environmental Protection Agency
- of Ghana (EPA). As a self-supporting organization, CERSGIS was mandated to provide GIS and Remote Sensing services using Geospatial technologies to provide decision
-  support and planning tools for sustainable social and economic development to Government, NGOs, Research Institutions and the Private Sector. The Centre is located at
-   the Department of Geography and Resource Development, University of Ghana, Legon<br></p>
+      <a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">A military officer laments <br>about effects of galamsey</a>
+    </div>
 
+    <div>
+      <p>Only a few years ago, the issue was with the illegal</p>
+      <p class="news-section-border">{{display.military}}</p>
+    </div>
 
-   <div id="demo" class="collapse">
-    In addition, the Centre provides inter alia, services in the development of Spatial Data Infrastructure
-    Satellite Image processing, Spatial Database development and Web-based applications for spatial land
-    use/land cover mapping and planning, desertification, flood hazard mapping, spatial modeling,
-    vulnerability assessment and capacity enhancement programs in Geographic Information System development.<br><br>
-
-    Over the pasdt decade, CERSGIS has expanded its capacity by the succesful execution of Geographic Information
-    Systems (GIS) and Remote Sensing related projects for the Ghana Government - Ministries, Departments and Agencies,
-    the UN Agencies and Development Partners such as AfDB, European Union (EU), World Bank, GIZ, JICA, DFID and
-    the Ghana Armed Forces (GAF), African Union (AU) and the United States Agency for International
-    Development (USAID).<br><br>
-
-    CERSGIS is a partner currently involved in the implementation of the sub-regional program, SERVIR
-    West Africa, that promotes the use of Remote Sensing technology to help stakeholders and decision makers
-    address pertinent issues on agriculture and food insecurity, land cover/land use and ecosystems, weather
-    and climate,water resources and
-</div>
-
-<div class="article-button">
- <button  type="button"  class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo" class="" >
-  Read More  <i class="bi bi-chevron-down"></i>
-</button>
-</div>
-
-</article>
-
-
-
-<div class="box">
+    <p><button class="news-section-btn" type="button" value="Read more"><a href="#">Read more...</a></button></p>
+  </div>
+  
  
-  <div class="box-flexing">
+
+
+  <div>
+    <img src="{% static 'assets/image/map.png' %}" alt="people" width="335px" height="200px"></img>
     
-    <div class="box-content">
-            <div class="mission">
-                <span class="bi bi-stack" style="color: #0088CC;"></span>
-                <h3 class="box-message">Our Mission</h3>
-                <p>{{display.our_mission}}</p>
-          </div>
-            </div>
-          
+    <div class="map-text mt-3">
+      <ul>
+        <li class="month">May</li>
+        <li class="year">2021</li>
+      </ul>
 
-        
-            <div class="box-content">
-              <div class="vision">
-                <span class="bi bi-stack" style="color: #0088CC;"></span>
-                <h3 class="box-message">Our Vision</h3>
-                
-                <p>{{display.our_vision}}</p>
-               
-            </div>
-          </div>
-        
-            
-            <div class="box-content">
-              <div class="why">
-                <span class="bi bi-stack"  style="color: #0088CC;"></span>
-                <h3 class="box-message">Why Us</h3>
-                <p>{{display.why_us}}
-                </p>
-            </div>
-        </div>
-      
-</div>
-</div>
+      <a  href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">MONITORING ARTISANAL <br>MINING (GALAMSEY) IN GHANA</a>
+    </div>
+    <div>
+      <p>The Artisanal mining sector of Ghana was seen to </p>
+      <p class="news-section-border">{{display.map}}</p>
+    </div>
+   <button class="news-section-btn" type="button" value="Read more"><a href="#">Read more...</a></button>
+  </div>
 
+  <div>
+    <img src="{% static 'assets/image/village.jpeg' %}" alt="people" width="335px" height="200px"></img>
+    
+    <div class="map-text mt-3">
+      <ul>
+        <li class="month">May</li>
+        <li class="year">2021</li>
+      </ul>
 
+      <a  href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">CHARCOAL PRODUCTION </a>
+    </div>
+    <div>
+      <p>CHARCOAL PRODUCTION</p>
+      <p class="news-section-border">{{display.village}}</p>
+    </div>
+   <button class="news-section-btn" type="button" value="Read more"><a href="#">Read more...</a></button>
+  </div>
 
 
-<div class="middle">
-    <h1>Meet <strong>Our Team</strong> </h1> 
-    <p class="word"> {{display.meet_our_team}}</p>
-</div>
+  <div>
+    <img src="{% static 'assets/image/sanitaton.jpeg' %}" alt="people" width="335px" height="200px"></img>
+    
+    <div class="map-text mt-3">
+      <ul>
+        <li class="month">May</li>
+        <li class="year">2021</li>
+      </ul>
 
+      <a  href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">SANITATION IN GHANA </a>
+    </div>
+    <div>
+      <p>SANITATION IN GHANA </p>
+      <p class="news-section-border">{{display.sanitation}}</p>
+    </div>
+   <button class="news-section-btn" type="button" value="Read more"><a href="#">Read more...</a></button>
+  </div>
 
+  <div>
+    <img src="{% static 'assets/image/mine.jpeg' %}" alt="people" width="335px" height="200px"></img>
+    
+    <div class="map-text mt-3">
+      <ul>
+        <li class="month">May</li>
+        <li class="year">2021</li>
+      </ul>
 
+      <a  href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">ILLEGAL MINING (GALAMSEY) MONITORING IN GHANA.</a>  
+    </div>
+    <div>
+      <p>ILLEGAL MINING (GALAMSEY) MONITORING IN GHANA. </p>
+      <p class="news-section-border">{{display.mine}}</p>
+    </div>
+   <button class="news-section-btn" type="button" value="Read more"><a href="#">Read more...</a></button>
+  </div>
 
-<footer class="footers">
+  <footer class="footers">
     <div class="footer">
       <div>
         <p class="get-in-touch">Get in touch</p>
@@ -188,30 +213,30 @@ About CERSGIS
 
       <div>
         <h1 class="footer-header ps-5">Newsletter</h1>
-        <ul>
+        <ul class="news-letter">
           
           <li class="new-letter-text">
             <p>Keep up on our always evolving product features and </p>
             <p>technology. Enter your e-mail and subscribe to our</p>
             <p> newsletter.</p>
           </li>
-          <li>
+          <li class="news-btns">
             <input class="news-letter-btn" type="email" id="email" name="email" placeholder="Email Address"><button
-              class="news-btn" type="button" value="Go">
+              < class="news-btn" type="button" value="Go"> 
               Go! </button>
           </li>
 
         </ul>
       </div>
 
-      <div>
+      <div >
         <h1 class="footer-header ps-5">Contact Us</h1>
-        <ul>
-          <li class="contact-text"><span class="bi bi-geo-alt" style="font-size:15px;color:grey;"> Address: Annie Jiagge
+        <ul class="contact-us">
+          <li class="contact-text"><span class="bi bi-geo-alt" style="font-size:px;color:grey;"> Address: Annie Jiagge
               St, University of Ghana-Legon - Accra
             </span> </li>
 
-          <li class="contact-text"> <span class="bi bi-telephone-fill" style="font-size:15px; color:grey;""> Phone: (+233)0303974211</span></li>
+          <li class="contact-text"> <span class="bi bi-telephone-fill" style="font-size:px; color:grey;"> Phone: (+233)0303974211</span></li>
 
           <li class=" contact-text"> <span class="bi bi-envelope  " style="font:15px; color:grey;"> Email:
                 <a class="contact-email" href="#">cersgis@ug.edu.gh</a> </span>
@@ -222,7 +247,7 @@ About CERSGIS
       </div>
 
       <div>
-        <h1 class="footer-header">Useful Links</h1>
+        <h1 class="footer-header  ps-5">Useful Links</h1>
         <ul class="useful-links">
           
           <li><a href="#">University of Ghana, Legon</a></li>
@@ -240,7 +265,7 @@ About CERSGIS
 
     <div class="last-page">
       <div class="last-page-image">
-        <img src="assets/image/logo.png" alt="logo" width="80px">
+        <img class="last-page-image" src="{% static 'assets/image/logo.png' %}" alt="logo" width="80px">
       </div>
       <div class="copyright">
         &copy;Copyright 2019. All Rights Reserved.
@@ -248,23 +273,15 @@ About CERSGIS
       </div>
 
       <div class="last-page-logo">
-        <a href="#" target="blank"><img src="assets/image/facebook.ico" alt="facebook" width="20px"
-            style="background-color:white;"></a>
+        <a href="#" class="fa fa-facebook"></a>
 
-        <a href="#" target="blank"><img src="assets/image/twitter.png" width="20px" style="background-color:white;"></a>
+        <a href="#" class="fa fa-twitter"></a>
 
-        <a" href="#" target="blank"><img src="assets/image/linkin.webp" width="20px"
-            style="background-color:white;"></a>
+        <a href="#" class="fa fa-linkedin"></a>
       </div>
 
     </div>
 
-
-
-  </footer>
-
-
-
 </body>
-{%endblock%}
 </html>
+{%endblock%}
