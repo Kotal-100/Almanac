@@ -116,6 +116,11 @@ nav {
   transform: translate(50%,);
 }
 
+.tag{
+  width: 30px;
+  height: 200px;
+}
+
 .words,
 .collapse {
   color: grey;

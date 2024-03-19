@@ -18,6 +18,12 @@ from django.contrib import admin
 from django.urls import include, path
 from Contactus import views
 from Dashboard import views as Dashboardviews
+from django.conf import settings
+from django.conf.urls.static import static
+from django.conf import settings 
+
+
+
 
 dashboard_urlpatterns = [
     path('user/', Dashboardviews.user, name='user'),
@@ -39,4 +45,5 @@ urlpatterns = [
     path("policies/", include("Policies.urls")),
    
     path('admin/', admin.site.urls),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
+
