@@ -138,13 +138,13 @@
 
   
 
-
+  
   <div class="row row-cols-1 row-cols-md-2 justify-content-center mt-5">
-
     <div class="col ">
+    
 
-      <form class="form">
-        
+      <form class="form" method="post">
+        {% csrf_token %}
         <h2 class="mb-sm mt-sm form-hed"><strong>Contact</strong> Us</h2>
         
         
@@ -152,24 +152,28 @@
           <div class="form-tail row row-cols-1 row-cols-md-2 ">
             <div class="col">
               <label class="name mb-2 color-change" for="name">Your Name*</label><br>
-              <input class="form-name" type="text" required>
+              <input class="form-name" name="name" type="text" required>
             </div>
             <div class="col pt-md-0 pt-3">
               <label class="email mb-2 color-change" for="gmail">Your email address*</label><br>
-              <input class="form-email" type="email" required><br>
+              <input class="form-email" name="email" type="email" required><br>
             </div>
           </div>
-          
+       
+        
           <div class="mt-3">
             <label class=" message mb-2 color-change" for="messages">Messages*</label><br>
-            <textarea class="textarea" name="message" rows="10" "></textarea>
+          
+          
+            <textarea class="textarea" name="message" rows="10" ></textarea>
             <hr class=" solid">
           </div>
-          <button class="message-btn" type="button "value="Send Message">Send Message</button>
-          
-        </form>
-      </div>
-        
+          <button class="message-btn" type="submit" value="Send Message">Send Message</button>
+        </div>
+      </form>
+      
+      
+    
         <div class="office col">
           <h3 style="color: #0088CC;">The Office</h3>
           
@@ -178,7 +182,7 @@
         <a href="#"><i class="bi bi-envelope-fill"></i> cersgis@ug.edu.gh</a>
         <hr class="solid">
 
-
+     
       <div>
         <h3 style="color: #0088CC;">Business Hours</h3>
         <p style="color:grey ;"><span class="bi bi-clock-fill" style="color:#2f353e;">     <em class="text-edit"> Monday - Friday - 8am - 5pm</em>       </span></p>
@@ -193,6 +197,7 @@
 </div>
 
 
+     
 
 <!-- 
 <footer class="footers">

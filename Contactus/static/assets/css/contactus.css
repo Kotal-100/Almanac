@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 
-
+.tag{
+  height: 200px;
+  width: 335px;
+} 
 
 
 ul {

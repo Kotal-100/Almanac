@@ -38,7 +38,7 @@ urlpatterns = [
     path("about-us/", include("Aboutus.urls")),
     path("blog/", include("Blog.urls")),
     path("community-engagement/", include("Communityengagement.urls")),
-    path('contact-us/', views.Contactus, name='contact_us'),
+    path('contact-us/', views.contactus, name='contact_us'),
     path("dashboard/", include(dashboard_urlpatterns)),
     path("", include("Home.urls")),
     path("legislations/", include("Legislations.urls")),
