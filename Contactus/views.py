@@ -19,7 +19,7 @@ def contactus(request):
         message = request.POST.get("message")
         user= Contactus(name=name,email=email,message=message)
         user.save()
-        return redirect("/contact-us/",message="message",JsonResponse("message succefully sent"))
+        return redirect("/contact-us/",message="message")
 
 # # def Contactus(request):
 #   name =request.POST.get("name")
